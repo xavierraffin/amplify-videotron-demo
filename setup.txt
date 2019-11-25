@@ -1,0 +1,24 @@
+Cognito : Prototypes-SSO-MultipleSAML
+xraffin isengard : 959861384820
+Oregon
+
+SSO1 same accout N.Virginia
+SSO2 my perso N.Virginia
+
+Requirements:
+i18n
+custom UI - federation
+multi-region
+
+Present: Cognito and OAM integration
+Future: Could Cognito be a replacement for OAM? 
+
+UI Customization options
+Issues with SAML “personalization”
+Issues with IDP selection
+SSO with Cognito
+DR Strategy
+Security requirements
+Reporting and APG integration
+Monitoring
+
