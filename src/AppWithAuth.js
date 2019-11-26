@@ -1,20 +1,22 @@
 import React from "react";
-import { Authenticator, SignIn, SignOut } from "aws-amplify-react";
+import { Authenticator, ConfirmSignUp, SignOut } from "aws-amplify-react";
 import { CustomSignIn } from "./CustomSignIn";
+import { CustomSignUp } from "./CustomSignUp";
 import config from "./aws-exports";
 import PrivateContent from "./PrivateContent";
 
 const authTheme = {
     button: {
-        backgroundColor: "blue"
+        backgroundColor: "#FFD800"
     },
     signInButton:{
-        backgroundColor: "blue"
+        backgroundColor: "#FFD800"
     },
     navButton: {
       marginLeft: 12,
       borderRadius: 4,
-      backgroundColor: '#30d0fe',
+      backgroundColor: '#FFD800',
+      color: '#000',
     },
   }
 
@@ -27,9 +29,11 @@ class AppWithAuth extends React.Component {
     return (
       <div>
         <Authenticator hideDefault={true}  amplifyConfig={config} theme={authTheme}>
-          <SignOut />
+          <CustomSignUp lang={this.props.lang} />
           <CustomSignIn lang={this.props.lang} />
+          <ConfirmSignUp />
           <PrivateContent lang={this.props.lang} />
+          <SignOut />
         </Authenticator>
       </div>
     );

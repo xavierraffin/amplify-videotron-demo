@@ -55,3 +55,19 @@
   font-weight: bold;
   background-color: #FFD800;
 }
+.login-div {
+  position: absolute;
+  left: 150px;
+  top:150px;
+}
+.login-form {
+  background-color: #FFD800 !important;
+  padding: 20px;
+}
+.connexion {
+  background-color: #000;
+  color: #FFF;
+}
+.mylink {
+  text-decoration: underline !important;
+}

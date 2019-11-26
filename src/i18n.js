@@ -7,6 +7,10 @@ export const LANG = {
 export function i18n(term, lang) {
     if(lang == LANG.FR) {
         switch(term) {
+            case "Create Account": return "Créer un compte";
+            case "Have an account? ": return "Déjà membre? ";
+            case "Email": return "Courriel";
+            case "Sign in": return "Se connecter";
             case "Login": return "Connexion";
             case "No Account? ": return "Pas de compte? ";
             case "Password": return "Mot de Passe";
