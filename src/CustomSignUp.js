@@ -12,6 +12,20 @@ export class CustomSignUp extends SignUp {
     return [];
   }
 
+  signUp() {
+    this.inputs["custom:lang"] = this.props.lang;
+    this.signUpFields.push({   
+      label: "custom:lang",
+      key: "custom:lang",
+      placeholder: "",
+      required: false,
+      displayOrder: 8,
+      custom: true,
+      type: "string"
+     });
+    super.signUp();
+  }
+
   showComponent(theme) {
     if (super.checkCustomSignUpFields()) {
 			super.signUpFields = super.props.signUpConfig.signUpFields;
@@ -77,7 +91,7 @@ export class CustomSignUp extends SignUp {
             <button
               className="connexion bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="button"
-              onClick={() => super.signUp()}
+              onClick={() => this.signUp()}
             >
               { i18n("Create Account", this.props.lang) }
             </button><br/><br/>
