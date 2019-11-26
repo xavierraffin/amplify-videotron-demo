@@ -1,5 +1,6 @@
 import React from "react";
 import { SignIn } from "aws-amplify-react";
+import { i18n } from "./i18n";
 
 export class CustomSignIn extends SignIn {
   constructor(props) {
@@ -16,7 +17,7 @@ export class CustomSignIn extends SignIn {
               className="block text-grey-darker text-sm font-bold mb-2"
               htmlFor="username"
             >
-              Username
+              { i18n("Username", this.props.lang) }
             </label>
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
@@ -33,7 +34,7 @@ export class CustomSignIn extends SignIn {
               className="block text-grey-darker text-sm font-bold mb-2"
               htmlFor="password"
             >
-              Password
+              { i18n("Password", this.props.lang) }
             </label>
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker mb-3 leading-tight focus:outline-none focus:shadow-outline"
@@ -45,12 +46,12 @@ export class CustomSignIn extends SignIn {
               placeholder="******************"
             />
             <p className="text-grey-dark text-xs">
-              Forgot your password?{" "}
+              { i18n("Forgot your password? ", this.props.lang) }
               <a
                 className="text-indigo cursor-pointer hover:text-indigo-darker"
                 onClick={() => super.changeState("forgotPassword")}
               >
-                Reset Password
+                { i18n("Reset Password", this.props.lang) }
               </a>
             </p>
           </div>
@@ -60,15 +61,15 @@ export class CustomSignIn extends SignIn {
               type="button"
               onClick={() => super.signIn()}
             >
-              Login
+              { i18n("Login", this.props.lang) }
             </button>
             <p className="text-grey-dark text-xs">
-              No Account?{" "}
+              { i18n("No Account? ", this.props.lang) }
               <a
                 className="text-indigo cursor-pointer hover:text-indigo-darker"
                 onClick={() => super.changeState("signUp")}
               >
-                Create account
+                { i18n("Create account", this.props.lang) }
               </a>
             </p>
           </div>

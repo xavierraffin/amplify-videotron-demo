@@ -8,7 +8,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +17,41 @@
   color: white;
 }
 
+.logo {
+  height: 80px;
+  width: 80px;
+  background-color: #FFD800;
+  position: absolute;
+  left: 0;
+  }
+.logoInner {
+  height: 34px;
+  width: 34px;
+  margin: 20px 21px;
+  background-image: url('https://fe.videotron.net/a/few/frg/static-tmpl-v-marginals-vsr/0.1.592/medias/static/img/logo-videotron-icon.svg')
+}
+
 .App-link {
   color: #09d3ac;
+}
+
+
+.navVid {
+  position: absolute;
+}
+.navVid1 {
+  left: 150px;
+}
+.navVid2 {
+  left: 300px;
+}
+.navVid3 {
+  right: 100px;
+}
+.content {
+  margin: 5px 30px;
+  padding: 40px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #FFD800;
 }
