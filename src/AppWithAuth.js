@@ -6,29 +6,26 @@ import config from "./aws-exports";
 import PrivateContent from "./PrivateContent";
 
 const authTheme = {
-    button: {
-        backgroundColor: "#FFD800"
-    },
-    signInButton:{
-        backgroundColor: "#FFD800"
-    },
-    navButton: {
-      marginLeft: 12,
-      borderRadius: 4,
-      backgroundColor: '#FFD800',
-      color: '#000',
-    },
-  }
+  button: {
+    backgroundColor: "#FFD800"
+  },
+  signInButton: {
+    backgroundColor: "#FFD800"
+  },
+  navButton: {
+    marginLeft: 12,
+    borderRadius: 4,
+    backgroundColor: '#FFD800',
+    color: '#000',
+  },
+}
 
 class AppWithAuth extends React.Component {
-  constructor(props, context) {
-    super(props, context);
-  }
 
   render() {
     return (
       <div>
-        <Authenticator hideDefault={true}  amplifyConfig={config} theme={authTheme}>
+        <Authenticator hideDefault={true} amplifyConfig={config} theme={authTheme}>
           <CustomSignUp lang={this.props.lang} />
           <CustomSignIn lang={this.props.lang} />
           <ConfirmSignUp />

@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #06473C;
 }
 
 .App-logo {
@@ -7,28 +8,29 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  height: 80px;
+  background-color: #fff;
+  height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #541717;
 }
 
 .logo {
-  height: 80px;
-  width: 80px;
-  background-color: #FFD800;
+  height: 100px;
+  width: 100px;
+  background-color: #FFF;
   position: absolute;
   left: 0;
   }
 .logoInner {
-  height: 34px;
-  width: 34px;
-  margin: 20px 21px;
-  background-image: url('https://fe.videotron.net/a/few/frg/static-tmpl-v-marginals-vsr/0.1.592/medias/static/img/logo-videotron-icon.svg')
+  height: 60px;
+  width: 73px;
+  margin: 30px 41px;
+  background-repeat: no-repeat;
+  background-image: url('https://fizz.ca/themes/bookmark_2018/images/icons/fizz.svg')
 }
 
 .App-link {
@@ -40,20 +42,32 @@
   position: absolute;
 }
 .navVid1 {
-  left: 150px;
+  left: 350px;
 }
 .navVid2 {
-  left: 300px;
+  left: 500px;
 }
 .navVid3 {
+  border-width: 1px;
+  border-color: #000;
+  border-style: solid;
+  border-radius: 15px;
+  color: #FFF;
+  background-color: #541717;
   right: 100px;
+}
+a.navVid3 {
+  color: #FFF !important;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 4px;
 }
 .content {
   margin: 5px 30px;
   padding: 40px;
   font-size: 25px;
   font-weight: bold;
-  background-color: #FFD800;
+  background-color: #2AE789;
 }
 .login-div {
   position: absolute;
@@ -61,7 +75,7 @@
   top:150px;
 }
 .login-form {
-  background-color: #FFD800 !important;
+  background-color: #2AE789 !important;
   padding: 20px;
 }
 .connexion {

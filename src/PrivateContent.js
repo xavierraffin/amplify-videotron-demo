@@ -7,16 +7,16 @@ class PrivateContent extends React.Component {
   }
 
   render() {
-    if (this.props.authState == "signedIn") {
+    if (this.props.authState === "signedIn") {
       return (
         <div>
-          <h1>{ i18n("This is private content", this.props.lang) }</h1>
+          <h1>{i18n("This is private content", this.props.lang)}</h1>
         </div>
       );
     } else {
       return (
         <div>
-          <h1>{ i18n("You are not logged in", this.props.lang) }</h1>
+          <h1>{i18n("You are not logged in", this.props.lang)}</h1>
         </div>
       );
     }

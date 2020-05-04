@@ -33,5 +33,23 @@
                 "videotronauthdemo0ee77323": {}
             }
         }
+    },
+    "demothree": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-videotron-auth-demo-demothree-83136-authRole",
+            "UnauthRoleArn": "arn:aws:iam::959861384820:role/amplify-videotron-auth-demo-demothree-83136-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::959861384820:role/amplify-videotron-auth-demo-demothree-83136-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "amplify-videotron-auth-demo-demothree-83136-deployment",
+            "UnauthRoleName": "amplify-videotron-auth-demo-demothree-83136-unauthRole",
+            "StackName": "amplify-videotron-auth-demo-demothree-83136",
+            "StackId": "arn:aws:cloudformation:us-west-2:959861384820:stack/amplify-videotron-auth-demo-demothree-83136/597af400-8e1c-11ea-b102-0ac711d65b04",
+            "AmplifyAppId": "dtaoywqbtpvkl"
+        },
+        "categories": {
+            "auth": {
+                "videotronauthdemo0ee77323": {}
+            }
+        }
     }
 }

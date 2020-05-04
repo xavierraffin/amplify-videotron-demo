@@ -1,12 +1,12 @@
 
 export const LANG = {
-    FR: 'English',
-    EN: 'Français'
+    FR: 'FR',
+    EN: 'EN'
 }
 
 export function i18n(term, lang) {
-    if(lang == LANG.FR) {
-        switch(term) {
+    if (lang === LANG.FR) {
+        switch (term) {
             case "Create Account": return "Créer un compte";
             case "Have an account? ": return "Déjà membre? ";
             case "Email": return "Courriel";
@@ -22,8 +22,8 @@ export function i18n(term, lang) {
             case "You are not logged in": return "Vous n'êtes pas connecté";
             case "HOME": return "ACCUEIL";
             case "CUSTOMER CENTER": return "ESPACE CLIENT";
-            case "GET A SAMSUNG TABLET AS A GIFT with the purchase of a selected Samsung device at $01 and a 24-month subscription to a Zen plan": return "OBTENEZ UNE TABLETTE SAMSUNG EN CADEAU avec un appareil mobile Samsung sélectionné à 0 $1 et un abonnement de 24 mois à un forfait Zen";
+            case "Choose the internet network that trims out the fuss.": return "Vous êtes à un cheveu d’un réseau Internet fiable et sans tracas.";
             default: return term;
         }
-      } else return term;
+    } else return term;
 }
